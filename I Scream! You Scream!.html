@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="description" content=" My Ice Cream shop website by jon taylor">
+        <meta name="author" context="Jon Taylor">
+
+        <title>
+            I Scream! You Scream! 
+        </title>
+<!-----------------------------------CSS Portion--------------------------------------------------->
+    <style>
+    @font-face {
+        font-family: 'NeoNeon';  /* Name for the first font */
+        src: url('NeoNeon.otf') format('opentype'); /* Font file location */
+    }
+
+      @font-face {
+      font-family: 'NeoNeon-Light';  /* Name for the second font */
+      src: url('NeoNeon-light.otf') format('opentype'); /* Font file location */
+    }
+
+    .Heading {
+        font-family: NeoNeon-light;
+        font-size: 50px;
+        text-align: center;
+        color: #ff00cc;
+        text-shadow: 
+            0 0 5px #ff00ff,  /* First shadow layer: 
+                                0 = horizontal offset, 
+                                0 = vertical offset, 
+                                5px = blur radius, 
+                                #ff00ff = color (neon pink) */
+            0 0 30px #ff00ff, /* Second shadow layer: same offsets, 
+                                10px blur for a stronger glow effect */
+            0 0 5px #ff00ff; /* Third shadow layer: same offsets, 
+                                15px blur for an even stronger glow */
+    }
+
+    .Flavors {
+        text-align: center;
+        font-family: NeoNeon;
+        font-size: 25px;
+    }
+
+    .flavorbox{
+        background-color: aliceblue;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 4px;
+        border: solid black 2px;
+    }
+
+    .quickaccess {
+        position: sticky;
+        top: 0;
+        text-align: center;
+        background-color: aliceblue;
+        width: fit-content;
+        margin: auto;
+        padding: 2px;
+        border: solid black 2px;
+        z-index: 1;
+    }
+
+    .icecreamcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+        gap: 20px; /* Space between the images */
+        padding: 20px;
+        justify-items: center; /* Centers the grid items horizontally */
+    }
+
+    .Flava {
+        position: relative;
+        border: solid black 2px;
+        
+    }
+
+    body { 
+                min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
+                background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url('wafflecone_background.jpg'); 
+                background-size: cover; 
+                background-position: center;
+                background-attachment: fixed;
+            }
+    .flava_description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: aliceblue;
+        margin-top: 5px;
+        margin-left: 5px;
+        border: solid black 2px;
+        padding: 2px;
+        color: black;
+        font-size: 20px;
+    }
+
+    
+
+    p {
+        display: none;
+        background-color: aliceblue;
+        border: groove hotpink 4px;
+        padding: 5px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .Flava:Hover p{
+        display: block;
+    }
+    
+    </style>
+    </head>
+<!-----------------------------------Body--------------------------------------------------->
+    <body>
+        <div class="Heading">
+            <h1> <u>I Scream! <br> You Scream!</u> </h1>
+        </div>
+<!-----------------------------------Directions / Contact--------------------------------------------------->
+
+        <p class="quickaccess"> 
+            <u>Location:</u> <a href="https://maps.app.goo.gl/NfTXhpGeqh6r5xpX9" target="_blank">View Location on Google Maps</a>
+            
+            <br>
+            <u>Phone:</u> 315-651-1922
+        </p>
+        <br>        
+<!-----------------------------------Flavors--------------------------------------------------->
+
+        <div class="Flavors">
+            <h3 class="flavorbox"> Flavors </h3>
+        </div>
+
+        <div class="icecreamcontainer">
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="The Cluster Jam">
+                <div class="flava_description"> The Cluster Jam </div>
+
+                <p>The Cluster Jam Is a Unique Flavor with Frozen Raspberry Chunks, Crushed Graham Cracker, Dark Chocolate and Carmel Swirls and a soft serve of your choise of vanilla or chocolate OR BOTH!</p>
+
+            </div>
+
+            
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Jazzed up Neopolitan">
+                <div class="flava_description">Jazzed Up Neopolitan</div>
+
+                <p>Jazzed Up Neopolitan consists of Dulce de Leche, Vanilla Bean and Mango Sorbet, a little twist to your normal Neopolitan Ice Cream</p>
+
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="GIMME s'mores">
+                <div class="flava_description">GIMME s'mores</div>
+
+                <p> Classic S'mores Ice Cream, Marsmellow bites, Graham Cracker Bites and Chocolate Bites! and a a soft serve of your choise of vanilla or chocolate OR BOTH! *includes a free mini smore to make yourself*</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Hot Coffee">
+                <div class="flava_description">Hot Coffee</div>
+
+                <p> A Delightful Hot Coffee Flavored Custard </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Peanutbutter Deluxe">
+                <div class="flava_description">Peanutbutter Deluxe</div>
+
+                <p> Peanutbutter chunks, hard shell, with pretzel pieces and a soft serve of your choise of vanilla or chocolate OR BOTH!</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Black Raspberry Cheesecake">
+                <div class="flava_description">Black Raspberry Cheesecake</div>
+
+                <p> A Lovely creamy Black Raspberry inspired cheesecake icecream </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Baklava">
+                <div class="flava_description">Baklava</div>
+
+                <p> a unique flavor of backlava infused into your ice cream! </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Tiger Tracks">
+                <div class="flava_description">Tiger Tracks</div>
+
+                <p> Flavors that come straight from the REAL king of the jungle. Tiger tracks has dark chocolate streaks, Sea Salt and a delicious orange flavored ice cream </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Minty Chocolate Chip">
+                <div class="flava_description">Minty Chocolate Chip</div>
+
+                <p> For all you mint lovers! mint chocolate chip at its finest</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Maple Leaf">
+                <div class="flava_description">Maple Leaf</div>
+
+                <p> Maple Flavored Ice Cream derived from real maple!</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Chocolate Chip Cookie Dough">
+                <div class="flava_description">Cookie Dough</div>
+
+                <p> Cookie dough chunks, and mini chocolate chip chunks and a soft serve of your choise of vanilla or chocolate OR BOTH!</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Buttery Pecan">
+                <div class="flava_description">Buttery Pecan</div>
+
+                <p> A malted yummy buttery flavored peacan, with real delicious pecans inside</p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Seasonal 1">
+                <div class="flava_description">Seasonal 1</div>
+
+                <p> FLAVOR COMMING SOON </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Seasonal 2">
+                <div class="flava_description">Seasonal 2</div>
+
+                <p> FLAVOR COMMING SOON </p>
+            </div>
+
+            <div class="Flava">
+                <img src="Icecreamdisplay.png" alt="Season 3">
+                <div class="flava_description">Seasonal 3</div>
+
+                <p> FLAVOR COMMING SOON </p>
+            </div>
+
+
+            </div>
+        </div>
+
+    </body>
+</html>
