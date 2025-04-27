@@ -54,7 +54,7 @@
     p.quickaccess {
         display: block;
         position: sticky;
-        top: 0;
+        top: 6px;
         text-align: center;
         background-color: aliceblue;
         width: fit-content;
@@ -75,7 +75,7 @@
     .Flava {
         position: relative;
         border: solid black 2px;
-        
+        overflow: hidden;
     }
 
     body { 
@@ -98,19 +98,30 @@
         font-size: 20px;
     }
 
-    
+    .Flava:hover p {
+        display: block;
+    }
 
-    p {
+    .Flava p {
         display: none;
-        background-color: aliceblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
         border: groove hotpink 4px;
-        padding: 5px;
-        width: 200px;
-        margin: auto;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
     }
 
     .Flava:Hover p{
         display: block;
+    }
+
+    img:hover {
+        opacity: 0.5;
     }
     
     </style>
